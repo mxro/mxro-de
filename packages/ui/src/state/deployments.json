@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "name": "prod",
+    "terraform": {
+      "routing_function_name": {
+        "sensitive": false,
+        "type": "string",
+        "value": "mxro-de-routing"
+      },
+      "website_cdn_root_id": {
+        "sensitive": false,
+        "type": "string",
+        "value": "E28B7KKYNZXEZP"
+      }
+    }
+  }
+]
