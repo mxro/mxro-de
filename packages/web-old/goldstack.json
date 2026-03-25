@@ -1,0 +1,22 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "app-nextjs-bootstrap",
+  "template": "app-nextjs-bootstrap",
+  "templateVersion": "0.1.11",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "prod",
+      "configuration": {
+        "defaultCacheDuration": 10,
+        "hostedZoneDomain": "mxro.de",
+        "websiteDomain": "mxro.de",
+        "websiteDomainRedirect": "www.mxro.de"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2",
+      "tfVersion": "1.6",
+      "tfStateKey": "app-nextjs-bootstrap-prod-4042a0da967f8db85376.tfstate"
+    }
+  ]
+}

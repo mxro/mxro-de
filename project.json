@@ -1,0 +1,15 @@
+{
+  "projectName": "",
+  "packages": [
+    {
+      "packageName": "app-nextjs-bootstrap",
+      "templateReference": {
+        "templateName": "app-nextjs-bootstrap"
+      }
+    }
+  ],
+  "rootTemplateReference": {
+    "templateName": "yarn-pnp-monorepo"
+  },
+  "createdAt": "2026-03-25T03:12:50.030Z"
+}

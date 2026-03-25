@@ -1,0 +1,91 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.5/schema.json",
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "attributePosition": "auto",
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100,
+    "lineEnding": "lf"
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "single",
+      "trailingCommas": "all"
+    }
+  },
+  "json": {
+    "parser": {
+      "allowComments": false,
+      "allowTrailingCommas": false
+    },
+    "formatter": {
+      "enabled": true,
+      "trailingCommas": "none"
+    },
+    "linter": {
+      "enabled": true
+    }
+  },
+  "linter": {
+    "rules": {
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "noImplicitAnyLet": "warn",
+        "noAssignInExpressions": "warn",
+        "noAsyncPromiseExecutor": "warn",
+        "noArrayIndexKey": "warn"
+      },
+      "correctness": {
+        "noUnusedFunctionParameters": "warn",
+        "noUnusedVariables": "warn",
+        "useHookAtTopLevel": "warn",
+        "useExhaustiveDependencies": "warn"
+      },
+      "performance": {
+        "noImgElement": "off"
+      },
+      "security": {
+        "noGlobalEval": "warn",
+        "noDangerouslySetInnerHtml": "warn"
+      },
+      "style": {
+        "useImportType": "off",
+        "useNodejsImportProtocol": "off"
+      },
+      "a11y": "warn"
+    }
+  },
+  "files": {
+    "includes": [
+      "**/*.ts",
+      "**/*.js",
+      "**/*.json",
+      "**/*.jsonc",
+      "**/*.tsx",
+      "**/*.yml",
+      "**/*.yaml",
+      "!**/dist",
+      "!**/webDist",
+      "!**/distLambda",
+      "!**/goldstackLocal",
+      "!**/coverage",
+      "!**/node_modules",
+      "!**/.next",
+      "!**/.open-next",
+      "!**/server-side-rendering/static/generated",
+      "!**/lambda-python-job/lambda/lambda_env",
+      "!**/.terraform",
+      "!**/*.tfstate",
+      "!**/*.tfstate.backup",
+      "!**/.pnp.js",
+      "!**/.pnp.cjs",
+      "!**/.pnp.loader.mjs",
+      "!**/.yarnrc.yml",
+      "!**/.yarn",
+      "!**/README.md"
+    ]
+  }
+}
